@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudNotes | Note Management</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CloudNotes</h1>
+            <p>Professional Note Management</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Dashboard Section -->
+        <div class="dashboard-grid">
+            <!-- Add Note Form Section -->
+            <section class="note-form-card">
+                <h2>Create New Note</h2>
+                <form id="add-note-form">
+                    <input type="text" id="note-title" placeholder="Enter note title..." required>
+                    <textarea id="note-content" placeholder="Type your notes here..." rows="5" required></textarea>
+                    <button type="submit" id="add-btn">Save Note</button>
+                </form>
+            </section>
+
+            <!-- List Section -->
+            <section class="notes-list-section">
+                <h2>Recent Notes</h2>
+                <div id="notes-container" class="notes-grid">
+                    <!-- Notes loaded via script -->
+                    <p class="loading-text">Fetching your notes...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CloudNotes. Secure, Professional, Reliable.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
