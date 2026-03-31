@@ -1,5 +1,5 @@
 // Configuration: Replace with your actual backend URL after deployment
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'http://3.27.67.51:5000';
 
 document.addEventListener('DOMContentLoaded', () => {
     const noteForm = document.getElementById('add-note-form');

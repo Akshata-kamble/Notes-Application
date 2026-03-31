@@ -5,10 +5,10 @@ const mysql = require('mysql2');
  * Replace 'your_password' with your actual MySQL password.
  */
 const db = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'User@2004', // Enter your MySQL root password here
-    database: 'notes_app'
+    host: process.env.DB_HOST || '127.0.0.1',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || 'User@2004',
+    database: process.env.DB_NAME || 'notes_app'
 });
 
 // Connect to the database
